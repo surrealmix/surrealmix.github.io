@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a asp-controller="Home" asp-action="Index" class="navbar-brand mr-auto" style="font-family: 'Kaushan Script', cursive; font-size: 30px; color:white; display:inline-block">Egor Igolkin</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color:black;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav d-flex mx-auto">
+                <li class="nav-item {% if page.title == 'Главная' %}active{% endif %}">
+                    <a href="index" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item {% if page.title == 'Портфолио' %}active{% endif %}">
+                    <a href="portfolio" class="nav-link">Портфолио</a>
+                </li>
+                <li class="nav-item {% if page.title == 'Услуги' %}active{% endif %}">
+                    <a href="service" class="nav-link">Услуги</a>
+                </li>
+                <li class="nav-item {% if page.title == 'Уход за тату' %}active{% endif %}">
+                    <a href="care" class="nav-link">Уход за тату</a>
+                </li>
+                <li class="nav-item {% if page.title == 'Контакты' %}active{% endif %}">
+                    <a href="contact" class="nav-link">Контакты</a>
+                </li>
+            </ul>
+
+        </div>
+        <ul class="navbar-nav flex-row ml-md-auto d-none d-lg-flex">
+            <li class="nav-item">
+                <a href="https://vk.com/egor_igolkin" target="_blank" class="nav-link">
+                    <i class="fa fa-vk" aria-hidden="true" style="font-size:30px; display: inline-block"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.instagram.com/egor_korostik/" target="_blank" class="nav-link">
+                    <i class="fa fa-instagram" aria-hidden="true" style="font-size:30px; display: inline-block"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
